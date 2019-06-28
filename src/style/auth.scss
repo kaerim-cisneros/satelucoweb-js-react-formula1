@@ -1,0 +1,32 @@
+.auth-page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    //height: calc(100vh - 132px);
+    padding: 0 230px;
+    background-color: $beige;
+    height: 950px;
+
+    .left-column {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      border-top: 13px solid $formula-red;
+      border-right: 13px solid $formula-red;
+      border-top-right-radius: 15px;
+      height: 90%;       
+
+      .auth-img-wrp{
+        background-size: cover;
+        height: 100%;
+      }
+
+    }
+
+
+  
+    .right-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+@mixin base-btn {
+    cursor: pointer;
+    height: 42px;
+    font-size: 1em;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    background-color: $teal;
+    color: white;
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $dark-teal;
+    }
+}
+
+@mixin input-element {
+    input {
+        padding: 15px 10px;
+        width: 95%;
+        background-color: white;
+        color: $light-gray;
+        border: 1px solid $light-gray;
+        border-radius: 10px;
+        margin-bottom: 15px;
+   
+        &:focus{
+            outline: none;
+            border: 1px solid $formula-red;
+
+        }
+    }
+
+    label{
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    textarea{
+        padding: 15px 10px;
+        width: 97.6%;
+        height: 100px;
+        background-color: white;
+        color: $light-gray;
+        border: 1px solid $light-gray;
+        border-radius: 10px;
+        margin-bottom: 15px;
+
+        &:focus{
+            outline: none;
+            border: 1px solid $formula-red;
+
+        }
+    }
+
+    .select-element{
+        padding: 15px 10px;
+        width: 100%;
+        background-color: white;
+        color: $light-gray;
+        border: 1px solid $light-gray;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:focus{
+            outline: none;
+            border: 1px solid $formula-red;
+
+        }
+    }
+}
+

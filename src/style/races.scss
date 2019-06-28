@@ -1,0 +1,70 @@
+.race-page{
+    
+    &-wrapper{
+    padding: 20px 230px;
+    background-color: $beige;
+    }
+
+    &-title{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.25em;
+    }
+
+}
+
+.races-items-wrappers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+    
+
+    .races-item-wrappers{
+        position: relative;
+
+        .races-img-background{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 350px;
+            width: 100%; 
+        }
+
+        .img-txt-wrp{
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 0 150px;
+
+            .logo-wrp img{
+                
+            }
+
+            .subtitle{
+                margin-top:1em;
+                transition: 1s ease-in-out;
+                color: transparent;
+                font-family: 'Orbitron', sans-serif;
+                
+            }
+        }
+
+        .img-txt-wrp:hover .subtitle {
+            color: white;
+            
+        }
+
+    }
+}
+
+.image-blur{
+    transition: 1s;
+    filter: brightness(30%);
+    filter: blur(10%);
+}

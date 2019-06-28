@@ -1,0 +1,13 @@
+.calendar-manager-wrp {
+    display:grid;
+    grid-template-columns: 3fr .75fr;
+
+    .left-column {
+        background-color: black;
+    }
+
+    .right-column {
+        background-color: $beige;
+        
+    }
+}

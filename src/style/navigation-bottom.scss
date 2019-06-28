@@ -1,0 +1,30 @@
+.bottom-wrp{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 230px ;
+    background-color: black;
+    font-size: 0.7rem;
+    height: 50px;
+
+    .btm-nav-link-wrp{
+      margin-top: 5px;
+      height: 1.3em;
+      border-bottom: 2px solid transparent;
+      transition: 0.5s ease-in-out;
+      text-transform: uppercase;
+      padding: 3px 0px;
+  
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      &:hover {
+        border-bottom: 2px solid $formula-red;
+      }
+
+      .nav-link-active {
+        color: $light-gray;
+      }
+    }
+}

@@ -1,0 +1,22 @@
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 230px ;
+    
+  
+    .left-side {
+      display: flex;
+      padding: 12px 0;
+    }
+
+    .right-side{
+      display: flex;
+      justify-content: space-between;
+      color: $formula-red;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      padding: 7px 0;
+    }
+  
+}

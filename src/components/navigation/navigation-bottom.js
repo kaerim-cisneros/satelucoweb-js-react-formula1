@@ -14,6 +14,7 @@ export default class NavigationBottom extends Component {
               Contacts
             </NavLink>
           </div>
+          This is not the official web page of Formula 1 and it is just an school excerxise 
           <div className="btm-nav-link-wrp">
             <NavLink to="/#" activeClassName="nav-link-active">
               Privacy Policy

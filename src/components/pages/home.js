@@ -1,11 +1,11 @@
 import React from "react";
 
-import PortfolioContainer from "../portfolio/portfolio-container";
+import FrontLatest from "../home/frontLatest";
 
 export default function() {
   return (
     <div>
-      <PortfolioContainer />
+      <FrontLatest/>
     </div>
   );
 }

@@ -35,7 +35,10 @@ const NavigationLogIn = props => {
         <div className="login-wrapper">
             <div className="left-side">
             <div>Azerbaijan GP {moment().fromNow()}</div>
+            
+            This is not the official web page of Formula 1 and it is just an school excerxise 
             </div>
+
 
             <div className="right-side">
                  

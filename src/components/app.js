@@ -11,6 +11,7 @@ import Home from "./pages/home";
 import Teams from "./pages/teams";
 import Pilots from "./pages/pilots";
 import Standings from "./pages/standings";
+import Races from "./pages/races";
 import Contact from "./pages/contact";
 import Blog from "./pages/blog";
 import BlogDetail from "./pages/blog-detail";
@@ -122,6 +123,7 @@ render() {
               <Route path="/pilots" component={Pilots} />
               <Route path="/standings" component={Standings} />
               <Route path="/contact" component={Contact} />
+              <Route path="/races" component={Races}/>
               
               <Route path="/blog" 
                 render={props => (

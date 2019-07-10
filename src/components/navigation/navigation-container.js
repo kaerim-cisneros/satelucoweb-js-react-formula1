@@ -48,6 +48,12 @@ const NavigationComponent = props => {
                         Latest
                     </NavLink>
                 </div>
+
+                <div className="nav-link-wrapper">
+                   <NavLink to="/races" activeClassName="nav-link-active">
+                        Races
+                    </NavLink>
+                </div>
                
                 <div className="nav-link-wrapper">
                     <NavLink to="/standings" activeClassName="nav-link-active">

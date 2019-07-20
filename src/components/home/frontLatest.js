@@ -1,11 +1,17 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import BlogItem from "../blog/blog-item";
 
+import LeftBG from "../../../static/assets/img/blog/latest-cross.jpg"
+
+const styles = {
+  crossBG: {
+      backgroundImage: `url(${LeftBG})`
+  }
+};
 
 class FrontLatest extends Component {
+ 
   constructor(){
     super();
 
@@ -44,24 +50,47 @@ class FrontLatest extends Component {
     this.getBlogItems();
   }
 
-  componentWillUnmount(){
-    window.removeEventListener("scroll", this.onScroll, false);
-  }
+
 
   render() {
     const blogRecords = this.state.blogItems.map(blogItem => {
-      console.log(blogItem.id)
       return <BlogItem key={blogItem.id} blogItem = {blogItem} />;
       }  
     );
-
-    return<div className="blog-body">
-            <div className="blog-wrp">
-
-              <div>
-                {blogRecords}
-                
+    
+    return<div className="latest-body">
+            <div className="latest-wrp-left" style={styles.crossBG}>
+              
+              <div className="feautured" >
+            
+                <div className="tag">
+                  <b>News</b>
+                </div>
+             
+                {blogRecords.sort()[0]}
+            
               </div>
+            
+            </div>
+            
+            <div className="latest-wrp-right">
+            
+              <div className="latest-news">
+               {blogRecords.sort()[1]}
+              </div>
+            
+              <div className="latest-news">
+              {blogRecords.sort()[2]}
+              </div>
+            
+              <div className="latest-news">
+              {blogRecords.sort()[3]}
+              </div>
+            
+              <div className="latest-news">
+              {blogRecords.sort()[4]}
+              </div>
+            
             </div>
           </div>;
   }

@@ -13,12 +13,17 @@ const BlogItem = props => {
     } = props.blogItem;
 
     return (
-        <div className="blog-entry-wrp">
-            
+        <div className="blog-entry-wrp latest-entry featured-entry " >
+            <div className="blog-entry-image">
+            <Link to={`/latest/${id}`}>
             <img src={featured_image_url}/>
+            </Link>
+            </div>
+            <div className="blog-entry-text-wrp">
             <Link to={`/latest/${id}`}>
                 {title}
             </Link>
+            </div>
             {/*<div> // Esto por si queremos poner un resumen de lo que trata el blog entry
                 <Truncate lines={5} ellipsis={
                     <span>

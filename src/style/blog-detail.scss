@@ -3,10 +3,11 @@
     .blog-wrp-detail{
         display: grid;
         grid-template-columns: 20% 80%;
-        grid-template-rows: 250px 1fr 1fr;
+        grid-template-rows: 250px 574px 1fr;
         width: 1000px;
         background-image: url(../../static/assets/img/blog/bg-column1.png);
         background-repeat: repeat-y;
+        margin-bottom: 75px;
 
             &-title{
                 grid-column: 2/2;
@@ -21,17 +22,18 @@
 
             &-img{
                 grid-row: 2/3;
+    
 
                 img{
                 grid-column: 1/2;
                 border-top: 13px solid $formula-red;
                 border-right: 13px solid $formula-red;
-                border-top-right-radius: 15px;
+                border-top-right-radius: 30px;
                 }
             }
 
             &-content{
-                margin-top: 50px;
+                margin-top: 75px;
                 grid-column: 2/2;
                 grid-row: 3/3;
                 font-size: 1.15em;

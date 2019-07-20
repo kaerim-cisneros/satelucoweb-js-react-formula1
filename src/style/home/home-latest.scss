@@ -1,0 +1,162 @@
+.latest-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px 230px;
+    grid-column-gap: 30px;
+    height: auto;
+
+
+    .latest-wrp-right{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 349px 349px;
+        column-gap: 30px;
+        row-gap: 30px;
+        
+
+        .latest-news{
+
+            .latest-entry{
+                display:grid;
+                grid-template-rows: 190px 144px;
+                row-gap: 15px;
+                margin-bottom: 40px;
+                transition: 0.5s ease-in-out;
+                
+                
+                .blog-entry-image{
+                    overflow: hidden;
+                    grid-row:  1/2;
+                    
+
+                    img{
+                        height: auto;
+                        width: 100%;
+                        transition: transform .5s ease;
+                        
+                    }
+                }
+                
+                .blog-entry-text-wrp{
+                    grid-row: 2/2;
+                    border-bottom: 1px solid $light-gray;
+                    border-right: 1px solid $light-gray;
+                    border-bottom-right-radius: 15px;
+                    padding-right: 30px;
+                    transition: 0.5s ease-in-out;
+                }
+
+                a{
+                    text-decoration: none;
+                    font-size: 1.2em;
+                    color: black;
+                }   
+           
+            }
+
+            .latest-entry:hover{
+                display:grid;
+                grid-template-rows: 170px 164px;
+
+                .blog-entry-image{
+                   
+                    img{
+                      transform: scale(1.1);
+                    }
+                }
+               
+
+                .blog-entry-text-wrp{
+                    border-bottom: 1px solid $formula-red;
+                    border-right: 1px solid $formula-red;
+                   
+                }
+            }
+
+        
+         }
+
+
+    }
+
+    .latest-wrp-left{
+        border-top: 13px solid $formula-red;
+        border-right: 13px solid $formula-red;
+        border-top-right-radius: 30px;
+        
+        
+        
+        .feautured{
+            border-top-right-radius: 18px;
+            background-color: white;
+            padding-bottom: 15px;
+       
+            
+            
+
+            .tag{
+                height: 17px;
+                padding-top: 15px;
+                margin-bottom: 5px;
+                
+                b{
+                    color: $formula-red;
+                    font-size: 15px;
+                }
+            }
+            
+            .featured-entry{
+                display:grid;
+                grid-template-rows: auto 1fr;
+                grid-gap: 20px;
+                margin-bottom: 40px;
+                
+                    
+                    
+                .blog-entry-image{
+                    grid-row:  2/2;
+                    padding-right: 30px;
+                    overflow: hidden;
+                    
+                  
+                    img{
+                        height: auto;
+                        width: 650px;
+                        transition: transform .5s ease;
+                    }
+
+                }
+
+                .blog-entry-text-wrp{
+                       grid-row: 1/2;
+                    a{
+                        text-decoration: none;
+                        font-size: 2em;
+                        line-height: 1.2em;
+                        font-family: 'Orbitron', sans-serif;
+                        color: black;   
+                        transition: transform .5s ease;
+                    } 
+                }
+            }
+
+            .featured-entry:hover{
+                .blog-entry-image{
+                    img{
+                      width: 650px;
+                      transform: scale(1.05);
+                    }
+                }
+               
+                .blog-entry-text-wrp{
+                    a{
+                        text-decoration: underline;
+                    }
+                   
+                }
+            }
+        }
+    }
+    
+}
+
